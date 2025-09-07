@@ -649,3 +649,108 @@ Stack trace:
 #0 /home/u247349439/domains/brown-zebra-934639.hostingersite.com/public_html/api/get_products.php(105): mysqli->prepare()
 #1 {main}
   thrown in /home/u247349439/domains/brown-zebra-934639.hostingersite.com/public_html/api/get_products.php on line 105
+[07-Sep-2025 11:29:41 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo for 3306 failed: No such host is known.  in D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php on line 9
+[07-Sep-2025 11:29:41 UTC] PHP Stack trace:
+[07-Sep-2025 11:29:41 UTC] PHP   1. {main}() D:\wamp64\www\Projects\Tasks-management-system\api\sign_up.php:0
+[07-Sep-2025 11:29:41 UTC] PHP   2. require_once() D:\wamp64\www\Projects\Tasks-management-system\api\sign_up.php:3
+[07-Sep-2025 11:29:41 UTC] PHP   3. require_once() D:\wamp64\www\Projects\Tasks-management-system\api\config.php:5
+[07-Sep-2025 11:29:41 UTC] PHP   4. mysqli->__construct($hostname = '3306', $username = 'root', $password = '[Sensitive Parameter]', $database = 'amoux_tasks_system') D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php:9
+[07-Sep-2025 11:29:41 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for 3306 failed: No such host is known.  in D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php:9
+Stack trace:
+#0 D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php(9): mysqli->__construct('3306', 'root', Object(SensitiveParameterValue), 'amoux_tasks_sys...')
+#1 D:\wamp64\www\Projects\Tasks-management-system\api\config.php(5): require_once('D:\\wamp64\\www\\P...')
+#2 D:\wamp64\www\Projects\Tasks-management-system\api\sign_up.php(3): require_once('D:\\wamp64\\www\\P...')
+#3 {main}
+  thrown in D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php on line 9
+[07-Sep-2025 11:31:48 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo for 3306 failed: No such host is known.  in D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php on line 9
+[07-Sep-2025 11:31:48 UTC] PHP Stack trace:
+[07-Sep-2025 11:31:48 UTC] PHP   1. {main}() D:\wamp64\www\Projects\Tasks-management-system\api\sign_up.php:0
+[07-Sep-2025 11:31:48 UTC] PHP   2. require_once() D:\wamp64\www\Projects\Tasks-management-system\api\sign_up.php:3
+[07-Sep-2025 11:31:48 UTC] PHP   3. require_once() D:\wamp64\www\Projects\Tasks-management-system\api\config.php:5
+[07-Sep-2025 11:31:48 UTC] PHP   4. mysqli->__construct($hostname = '3306', $username = 'root', $password = '[Sensitive Parameter]', $database = 'amoux_tasks_system') D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php:9
+[07-Sep-2025 11:31:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for 3306 failed: No such host is known.  in D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php:9
+Stack trace:
+#0 D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php(9): mysqli->__construct('3306', 'root', Object(SensitiveParameterValue), 'amoux_tasks_sys...')
+#1 D:\wamp64\www\Projects\Tasks-management-system\api\config.php(5): require_once('D:\\wamp64\\www\\P...')
+#2 D:\wamp64\www\Projects\Tasks-management-system\api\sign_up.php(3): require_once('D:\\wamp64\\www\\P...')
+#3 {main}
+  thrown in D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php on line 9
+[07-Sep-2025 11:35:01 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo for 3306 failed: No such host is known.  in D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php on line 9
+[07-Sep-2025 11:35:01 UTC] PHP Stack trace:
+[07-Sep-2025 11:35:01 UTC] PHP   1. {main}() D:\wamp64\www\Projects\Tasks-management-system\api\sign_up.php:0
+[07-Sep-2025 11:35:01 UTC] PHP   2. require_once() D:\wamp64\www\Projects\Tasks-management-system\api\sign_up.php:3
+[07-Sep-2025 11:35:01 UTC] PHP   3. require_once() D:\wamp64\www\Projects\Tasks-management-system\api\config.php:5
+[07-Sep-2025 11:35:01 UTC] PHP   4. mysqli->__construct($hostname = '3306', $username = 'root', $password = '[Sensitive Parameter]', $database = 'amoux_tasks_system') D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php:9
+[07-Sep-2025 11:35:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for 3306 failed: No such host is known.  in D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php:9
+Stack trace:
+#0 D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php(9): mysqli->__construct('3306', 'root', Object(SensitiveParameterValue), 'amoux_tasks_sys...')
+#1 D:\wamp64\www\Projects\Tasks-management-system\api\config.php(5): require_once('D:\\wamp64\\www\\P...')
+#2 D:\wamp64\www\Projects\Tasks-management-system\api\sign_up.php(3): require_once('D:\\wamp64\\www\\P...')
+#3 {main}
+  thrown in D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php on line 9
+[07-Sep-2025 11:44:50 UTC] PHP Warning:  mysqli::__construct(): php_network_getaddresses: getaddrinfo for 3306 failed: No such host is known.  in D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php on line 9
+[07-Sep-2025 11:44:50 UTC] PHP Stack trace:
+[07-Sep-2025 11:44:50 UTC] PHP   1. {main}() D:\wamp64\www\Projects\Tasks-management-system\api\sign_up.php:0
+[07-Sep-2025 11:44:50 UTC] PHP   2. require_once() D:\wamp64\www\Projects\Tasks-management-system\api\sign_up.php:3
+[07-Sep-2025 11:44:50 UTC] PHP   3. require_once() D:\wamp64\www\Projects\Tasks-management-system\api\config.php:5
+[07-Sep-2025 11:44:50 UTC] PHP   4. mysqli->__construct($hostname = '3306', $username = 'root', $password = '[Sensitive Parameter]', $database = 'amoux_tasks_system') D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php:9
+[07-Sep-2025 11:44:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: php_network_getaddresses: getaddrinfo for 3306 failed: No such host is known.  in D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php:9
+Stack trace:
+#0 D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php(9): mysqli->__construct('3306', 'root', Object(SensitiveParameterValue), 'amoux_tasks_sys...')
+#1 D:\wamp64\www\Projects\Tasks-management-system\api\config.php(5): require_once('D:\\wamp64\\www\\P...')
+#2 D:\wamp64\www\Projects\Tasks-management-system\api\sign_up.php(3): require_once('D:\\wamp64\\www\\P...')
+#3 {main}
+  thrown in D:\wamp64\www\Projects\Tasks-management-system\controls\connection.php on line 9
+[07-Sep-2025 11:45:43 UTC] Array
+(
+    [name] => Yazan
+    [email] => yazan@email.com
+    [password] => Yazan@email123456
+)
+
+[07-Sep-2025 11:48:52 UTC] Array
+(
+    [name] => Sally
+    [email] => sally@email.com
+    [password] => Sally@qwerty123456
+)
+
+[07-Sep-2025 11:49:48 UTC] Array
+(
+    [name] => Lara
+    [email] => lara@email.com
+    [password] => Lara@qwerty123456
+)
+
+[07-Sep-2025 12:09:24 UTC] Array
+(
+    [name] => Faisal
+    [email] => faisal@email.com
+    [password] => Faisal@qwerty123456
+    [is_live] => 
+)
+
+[07-Sep-2025 12:40:46 UTC] Array
+(
+    [email] => faisal@email.com
+    [password] => Faisal@qwerty123456
+)
+
+[07-Sep-2025 12:54:18 UTC] Array
+(
+    [email] => faisal@email.com
+    [password] => Faisal@qwerty123456
+)
+
+[07-Sep-2025 12:54:38 UTC] Array
+(
+    [email] => faisal@email.com
+    [password] => Faisal@qwerty123456
+)
+
+[07-Sep-2025 12:54:49 UTC] Array
+(
+    [email] => faisal@email.com
+    [password] => Faisal@qwerty123456
+)
+

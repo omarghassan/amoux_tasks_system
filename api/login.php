@@ -1,4 +1,5 @@
 <?php
+// api/login.php
 require_once('config.php');
 
 // === Configuration ===
@@ -14,8 +15,8 @@ function login($data) {
     $email = mysqli_real_escape_string($conn, trim($data['email']));
     $password = trim($data['password']);
 
-    // Check if user exists
-    $sql = "SELECT id, name, email, password_hash FROM users WHERE email = '$email' AND status = 1 LIMIT 1";
+    // Check if user exists (adapted to your DB structure)
+    $sql = "SELECT id, name, email, password FROM users WHERE email = '$email' LIMIT 1";
     $res = mysqli_query($conn, $sql);
 
     if (!$res || mysqli_num_rows($res) === 0) {
@@ -24,16 +25,17 @@ function login($data) {
 
     $user = mysqli_fetch_assoc($res);
 
-    // Check password
-    if (!password_verify($password, $user['password_hash'])) {
+    // Check password (using your 'password' column)
+    if (!password_verify($password, $user['password'])) {
         print_response(false, "Incorrect password.");
     }
 
-    // Optionally generate token or session (if needed)
-    unset($user['password_hash']);
+    // Remove password from response for security
+    unset($user['password']);
 
     print_response(true, "Login successful.", $user);
 }
 
 // === Execute ===
 login($data);
+?>

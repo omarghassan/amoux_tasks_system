@@ -66,7 +66,7 @@
         <div class="form-container">
             <p class="form_title_cta">Let's Get You Started</p>
             <h2 class="form-title">Create an Account</h2>
-            <form>
+            <form id="signupForm">
                 <div class="form-group">
                     <input type="text" id="name" class="form-input" placeholder=" " required>
                     <label for="name" class="form-label">Your Name</label>
@@ -115,6 +115,7 @@
 
     </section>
 
+    <script type="module" src="./assets/js/sign_up.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

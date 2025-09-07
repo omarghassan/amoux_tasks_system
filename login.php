@@ -67,7 +67,7 @@
     <div class="form-container">
       <p class="form_title_cta">Welcome Back</p>
       <h2 class="form-title">Log In to your Account</h2>
-      <form>
+      <form id="loginForm">
         <div class="form-group">
           <input type="email" id="email" class="form-input" placeholder=" " required>
           <label for="email" class="form-label">Email</label>
@@ -109,6 +109,8 @@
     </div>
 
   </section>
+
+  <script src="./assets/js/login.js"></script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>

@@ -87,7 +87,7 @@
 .form-container {
   background: white;
   padding: 40px;
-  border-radius: 10px 10px 0 0;
+  border-radius: 24px 24px 0 0;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
   width: 400px;
   height: 95vh;
@@ -99,13 +99,14 @@
 .form-title {
   margin-bottom: 30px;
   color: #333;
-  font-size: 28px;
+  font-size: 25px;
   font-weight: 400;
 }
 
 .form_title_cta {
   text-transform: uppercase;
   color: #333;
+  font-size: 13px;
 }
 
 .form-group {

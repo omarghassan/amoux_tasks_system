@@ -169,6 +169,10 @@ const apis = {
   set_login_session: {
     url: `${base_url}set_login_session.php`,
     method: "POST"
+  },
+  signup: {
+    url: `${base_url}sign_up.php`,
+    method: "POST"
   }
 
 };
