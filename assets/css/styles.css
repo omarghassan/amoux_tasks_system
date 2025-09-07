@@ -12,6 +12,7 @@
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
+  position: relative;
 }
 
 #sign_up_page {
@@ -23,6 +24,7 @@
   background-position: center;
   background-repeat: no-repeat;
   min-height: 100vh;
+  position: relative;
 }
 
 .text_container {
@@ -85,9 +87,13 @@
 .form-container {
   background: white;
   padding: 40px;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
   width: 400px;
+  height: 95vh;
+  position: absolute;
+  bottom: 0;
+  left: 730px;
 }
 
 .form-title {
@@ -98,7 +104,7 @@
 }
 
 .form_title_cta {
-  text-transform: uppercase ;
+  text-transform: uppercase;
   color: #333;
 }
 
@@ -109,7 +115,7 @@
 
 .form-input {
   width: 100%;
-  padding: 12px 12px 12px 12px;
+  padding: 10px;
   border: 2px solid #ddd;
   border-radius: 8px;
   font-size: 16px;
@@ -261,4 +267,168 @@
 .form-footer a {
   color: #000000;
   text-decoration: underline;
+}
+
+/* Responsive Media Queries */
+
+/* Large Desktop (1200px and up) - Your current design works well */
+@media (min-width: 1200px) {
+  .form-container {
+    left: 730px;
+    width: 400px;
+  }
+}
+
+/* Medium Desktop (992px to 1199px) */
+@media (max-width: 1199px) and (min-width: 992px) {
+  .form-container {
+    left: 550px;
+    width: 380px;
+  }
+  
+  .text_container {
+    padding-left: 8rem; /* Reduce left padding */
+  }
+}
+
+/* Small Desktop / Large Tablet (768px to 991px) */
+@media (max-width: 991px) and (min-width: 768px) {
+  .form-container {
+    left: 400px;
+    width: 350px;
+    padding: 30px;
+  }
+  
+  .text_container {
+    padding-left: 4rem;
+    gap: 100px;
+  }
+}
+
+/* Tablet (576px to 767px) */
+@media (max-width: 767px) and (min-width: 576px) {
+  #sign_up_page, #login_page {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-container {
+    position: static; /* Switch to static positioning */
+    width: calc(100% - 40px);
+    height: auto;
+    margin: 20px;
+    border-radius: 10px; /* All corners rounded on mobile */
+    max-width: 500px;
+    align-self: center;
+  }
+  
+  .text_container {
+    padding-left: 2rem;
+    padding-top: 3rem;
+    gap: 50px;
+    text-align: center;
+  }
+  
+  .carousel_container {
+    max-width: 100%;
+  }
+}
+
+/* Mobile (up to 575px) */
+@media (max-width: 575px) {
+  #sign_up_page, #login_page {
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+  }
+  
+  .form-container {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 30px 20px;
+    border-radius: 20px 20px 0 0;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .text_container {
+    padding: 2rem 1rem 1rem 1rem;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .logo_container {
+    justify-content: center;
+  }
+  
+  .website_name {
+    font-size: 2rem;
+  }
+  
+  .carousel_container {
+    max-width: 100%;
+  }
+  
+  .carousel_text {
+    font-size: 14px;
+  }
+  
+  /* Form adjustments for mobile */
+  .form-title {
+    font-size: 24px;
+  }
+  
+  .sign_up_buttons {
+    padding: 10px 12px;
+  }
+  
+  .sign_up_options_text {
+    font-size: 12px;
+  }
+}
+
+/* Extra Small Mobile (up to 480px) */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 20px 15px;
+  }
+  
+  .website_name {
+    font-size: 1.8rem;
+  }
+  
+  .text_container {
+    padding: 1.5rem 0.8rem 1rem 0.8rem;
+  }
+}
+
+/* Landscape Mobile (height < 600px and width > height) */
+@media (max-height: 600px) and (orientation: landscape) {
+  #sign_up_page, #login_page {
+    flex-direction: row;
+    gap: 20px;
+  }
+  
+  .form-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    width: 350px;
+    height: 100vh;
+    border-radius: 10px 0 0 0;
+    overflow-y: auto;
+  }
+  
+  .text_container {
+    padding-left: 2rem;
+    padding-top: 2rem;
+    gap: 20px;
+    width: calc(100% - 370px);
+  }
+  
+  .carousel_container {
+    display: none; /* Hide carousel in landscape mobile to save space */
+  }
 }
