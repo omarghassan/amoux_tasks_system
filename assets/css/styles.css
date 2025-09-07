@@ -1,4 +1,264 @@
-body {
-  background-color: red !important;
+* {
+  /* color: #FFFFFF; */
+  font-family: "Zen Kaku Gothic Antique", sans-serif;
+}
+
+#login_page {
+  display: flex;
+  gap: 100px;
+  background-image: url("../images/login_background.png"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   min-height: 100vh;
+}
+
+#sign_up_page {
+  display: flex;
+  gap: 100px;
+  background-image: url("../images/sign_up_background.png"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  background-blend-mode: overlay;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.text_container {
+  padding-left: 16rem;
+  padding-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  color: #FFFFFF;
+}
+
+.logo_container {
+  display: flex;
+
+}
+
+.logo_image {
+  width: 64px;
+  height: 64px;
+}
+
+.website_name {
+  font-size: 3rem;
+  padding-left: 5px;
+}
+
+.carousel_title {
+  margin-bottom: 20px;
+}
+
+.carousel_container {
+  max-width: 400px;
+}
+
+.carousel_container .carousel-indicators {
+  position: static !important;
+  margin-top: 20px;
+  margin-bottom: 0;
+  margin-left: 0;
+  justify-content: flex-start;
+}
+
+.carousel_container .carousel-indicators [data-bs-target] {
+  width: 30px;
+  height: 4px;
+  border-radius: 2px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  margin-right: 8px;
+}
+
+.carousel_container .carousel-indicators .active {
+  background-color: white;
+}
+
+.carousel_text {
+  text-align: justify;
+}
+
+.form-container {
+  background: white;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.form-title {
+  margin-bottom: 30px;
+  color: #333;
+  font-size: 28px;
+  font-weight: 400;
+}
+
+.form_title_cta {
+  text-transform: uppercase ;
+  color: #333;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 12px 12px 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  background: transparent;
+  outline: none;
+  transition: all 0.3s ease;
+  color: black;
+}
+
+.form-input:focus {
+  border-color: #667eea;
+}
+
+.form-label {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  color: #999;
+  font-size: 16px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background: white;
+  padding: 0 5px;
+}
+
+/* When input is focused OR has content, move label up */
+.form-input:focus+.form-label,
+.form-input:not(:placeholder-shown)+.form-label {
+  top: -10px;
+  left: 8px;
+  font-size: 12px;
+  color: #667eea;
+  transform: translateY(0);
+}
+
+.password-container {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #999;
+  font-size: 18px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: #212121;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+}
+
+.divider {
+  text-align: center;
+  margin: 24px 0;
+  position: relative;
+  color: #666;
+  font-size: 14px;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #e1e5e9;
+  z-index: 1;
+}
+
+.divider span {
+  background: white;
+  padding: 0 16px;
+  position: relative;
+  z-index: 2;
+}
+
+.sign_up_options {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.sign_up_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+}
+
+.sign_up_buttons:hover {
+  border-color: #999;
+  background: #f8f9fa;
+}
+
+.sign_up_buttons_logos {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.apple_logo {
+  width: 16px;
+  height: 20px;
+  margin-right: 12px;
+}
+
+.sign_up_options_text {
+  margin: 0;
+  color: #616161;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.form-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.form-footer a {
+  color: #000000;
+  text-decoration: underline;
 }
