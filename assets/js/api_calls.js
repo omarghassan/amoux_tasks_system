@@ -146,34 +146,18 @@ async function handleImageUpload(event) {
 
 // API configurations with dynamic concatenation using the base_url variable
 const apis = {
-  getHomePage: {
-    url: `${base_url}get_home_page.php`,
-    method: "GET",
-  },
-  getProducts: {
-    url: `${base_url}get_products.php`,
-    method: "POST"
-  },
-  updateFavorites: {
-    url: `${base_url}update_favorites.php`,
-    method: "POST"
-  },
-  updateCart: {
-    url: `${base_url}update_cart.php`,
-    method: "POST"
-  },
-  getFilterOptions: {
-    url: `${base_url}get_filter_options.php`,
-    method: "POST"
-  },
-  set_login_session: {
-    url: `${base_url}set_login_session.php`,
-    method: "POST"
-  },
-  signup: {
-    url: `${base_url}sign_up.php`,
-    method: "POST"
-  }
+    set_login_session: {
+        url: `${base_url}set_login_session.php`,
+        method: "POST"
+    },
+    signup: {
+        url: `${base_url}sign_up.php`,
+        method: "POST"
+    },
+    login: {
+        url: `${base_url}login.php`,
+        method: "POST"
+    }
 
 };
 

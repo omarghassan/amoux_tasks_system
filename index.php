@@ -1,1 +1,4 @@
-<?php echo "<script>window.location.replace('home.php');</script>" ?>
+<?php 
+echo "<script>window.location.replace('landing_page.php');</script>";
+
+?>

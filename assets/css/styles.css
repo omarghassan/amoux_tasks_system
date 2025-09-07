@@ -1,7 +1,13 @@
+/* :root{
+
+} */
+
 * {
   /* color: #FFFFFF; */
   font-family: "Zen Kaku Gothic Antique", sans-serif;
 }
+
+
 
 #login_page {
   display: flex;
