@@ -788,3 +788,43 @@ Stack trace:
     [is_live] => 
 )
 
+[09-Sep-2025 06:59:40 UTC] Array
+(
+    [email] => yazan@email.com
+    [password] => Yazan@email123456
+    [is_live] => 
+)
+
+[09-Sep-2025 06:59:41 UTC] Array
+(
+    [user_id] => 2
+    [is_live] => 
+)
+
+[09-Sep-2025 07:00:14 UTC] Array
+(
+    [email] => ahmad@email.com
+    [password] => Ahmad@email123456
+    [is_live] => 
+)
+
+[09-Sep-2025 07:00:31 UTC] Array
+(
+    [email] => ahmad@email.com
+    [password] => Ahmad@qwerty123456
+    [is_live] => 
+)
+
+[09-Sep-2025 07:00:48 UTC] Array
+(
+    [email] => ahmad@email.com
+    [password] => ahmad@qwerty123456
+    [is_live] => 
+)
+
+[09-Sep-2025 07:00:48 UTC] Array
+(
+    [user_id] => 6
+    [is_live] => 
+)
+

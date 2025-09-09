@@ -1,4 +1,4 @@
-// assets/js/login.js (Updated to use company's callApi function)
+// assets/js/login.js
 
 import { callApi, showUserMessage } from './api_calls.js';
 
@@ -56,12 +56,26 @@ document.addEventListener("DOMContentLoaded", function () {
         // Store user data in localStorage (following company pattern)
         localStorage.setItem("user", JSON.stringify(result.data));
 
-        showUserMessage("Login successful! Redirecting...", "success");
+        showUserMessage("Login successful!", "success");
 
-        // Redirect to landing page after a short delay
-        setTimeout(() => {
-          window.location.replace("dashboard.php");
-        }, 1500);
+        // Set login session
+        const sessionResult = await callApi('set_login_session', { 
+          user_id: result.data.id 
+        });
+
+        if (sessionResult && sessionResult.success) {
+          showUserMessage("Redirecting to dashboard...", "success");
+          
+          // Redirect to dashboard page after a short delay
+          setTimeout(() => {
+            window.location.replace("dashboard.php");
+          }, 1500);
+        } else {
+          showUserMessage("Session setup failed. Redirecting anyway...", "warning");
+          setTimeout(() => {
+            window.location.replace("dashboard.php");
+          }, 1500);
+        }
 
       } else {
         // The callApi function already shows error messages via showUserMessage

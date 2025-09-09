@@ -1,9 +1,9 @@
 <?php
-
+// Include session check at the top
+require_once('session_check.php');
 require_once('navbar.php');
-require_once('sidebar.php')
-
-    ?>
+require_once('sidebar.php');
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -23,12 +23,18 @@ require_once('sidebar.php')
 
         <div class="welcome_container">
             <h3 class="welcome_text">
-                Welcome back, Naruto 
+                Welcome back, <?php echo htmlspecialchars(getFirstName($current_user['name'])); ?> 
                 <img class="handwave_img" src="./assets/images/handwave.png" alt="handwave image">
             </h3>
 
             <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#addTaskModal">Add task</button>
         </div>
+
+        <!-- Hidden data for JavaScript access -->
+        <script>
+            // Make user data available to JavaScript
+            window.currentUser = <?php echo json_encode($current_user); ?>;
+        </script>
 
     </section>
 

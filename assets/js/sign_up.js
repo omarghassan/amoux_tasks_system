@@ -1,6 +1,5 @@
 // assets/js/signup.js
 
-// Import their centralized API system
 import { callApi, showUserMessage } from './api_calls.js';
 
 // Password toggle functionality
@@ -52,16 +51,33 @@ document.addEventListener('DOMContentLoaded', function() {
             const result = await callApi('signup', formData);
             
             if (result && result.success) {
-                showUserMessage('Account created successfully! Redirecting...', 'success');
+                showUserMessage('Account created successfully!', 'success');
                 
-                // Clear form
-                form.reset();
-                clearAllFieldErrors();
+                // Store user data in localStorage
+                localStorage.setItem("user", JSON.stringify(result.data.user));
                 
-                // Redirect to login page after 2 seconds
-                setTimeout(() => {
-                    window.location.href = './dashboard.php';
-                }, 2000);
+                // Set login session
+                const sessionResult = await callApi('set_login_session', { 
+                    user_id: result.data.user.id 
+                });
+                
+                if (sessionResult && sessionResult.success) {
+                    showUserMessage('Redirecting to dashboard...', 'success');
+                    
+                    // Clear form
+                    form.reset();
+                    clearAllFieldErrors();
+                    
+                    // Redirect to dashboard after 2 seconds
+                    setTimeout(() => {
+                        window.location.href = './dashboard.php';
+                    }, 2000);
+                } else {
+                    showUserMessage('Session setup failed. Please login manually.', 'warning');
+                    setTimeout(() => {
+                        window.location.href = './login.php';
+                    }, 2000);
+                }
                 
             } else {
                 // The callApi function already shows error messages via showUserMessage
