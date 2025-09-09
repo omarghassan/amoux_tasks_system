@@ -781,3 +781,10 @@ Stack trace:
     [is_live] => 
 )
 
+[07-Sep-2025 13:48:54 UTC] Array
+(
+    [email] => yazan@email.com
+    [password] => Yazan@email123456
+    [is_live] => 
+)
+

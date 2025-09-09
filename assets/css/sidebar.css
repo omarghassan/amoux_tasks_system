@@ -1,0 +1,65 @@
+.sidebar {
+    background-color: #000000;
+    min-height: 100vh;
+    width: 280px;
+    border-radius: 0 8px 8px 0;
+}
+
+.sidebar .nav-link {
+    color: white;
+    padding: 15px 20px;
+    border-radius: 0;
+    transition: all 0.3s ease;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #333;
+    color: white;
+}
+
+.sidebar .nav-link.active {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.sidebar .nav-link.active:hover {
+    background-color: #ff5252;
+}
+
+.menu-icon {
+    width: 20px;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.user-avatar {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+
+.user-email {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+/* Mobile responsive */
+@media (max-width: 767.98px) {
+    .sidebar {
+        width: 100%;
+    }
+}
+
+/* Offcanvas custom styling */
+.offcanvas-start {
+    background-color: #1a1a1a;
+    width: 280px;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #333;
+}
+
+.btn-close-white {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}

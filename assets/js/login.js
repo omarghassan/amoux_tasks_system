@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Redirect to landing page after a short delay
         setTimeout(() => {
-          window.location.replace("landing_page.php");
+          window.location.replace("dashboard.php");
         }, 1500);
 
       } else {

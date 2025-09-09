@@ -60,7 +60,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
                 // Redirect to login page after 2 seconds
                 setTimeout(() => {
-                    window.location.href = './landing_page.php';
+                    window.location.href = './dashboard.php';
                 }, 2000);
                 
             } else {
