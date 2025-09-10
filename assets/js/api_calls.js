@@ -157,6 +157,10 @@ const apis = {
     login: {
         url: `${base_url}login.php`,
         method: "POST"
+    },
+    add_task: {
+        url: `${base_url}add_task.php`,
+        method: "POST"
     }
 
 };

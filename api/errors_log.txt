@@ -828,3 +828,74 @@ Stack trace:
     [is_live] => 
 )
 
+[09-Sep-2025 08:33:51 UTC] Array
+(
+    [email] => faisal@email.com
+    [password] => Faisal@qwerty123456
+    [is_live] => 
+)
+
+[09-Sep-2025 08:33:51 UTC] Array
+(
+    [user_id] => 5
+    [is_live] => 
+)
+
+[10-Sep-2025 08:42:26 UTC] Array
+(
+    [title] => Modal Test
+    [date] => 2025-09-10
+    [priority] => extreme
+    [description] => Hello from modal
+    [is_live] => 
+)
+
+[10-Sep-2025 08:53:41 UTC] Array
+(
+    [email] => faisal@email.com
+    [password] => Faisal@qwerty123456
+    [is_live] => 
+)
+
+[10-Sep-2025 08:53:41 UTC] Array
+(
+    [user_id] => 5
+    [is_live] => 
+)
+
+[10-Sep-2025 08:54:14 UTC] Array
+(
+    [title] => Modal Test
+    [date] => 2025-09-10
+    [priority] => extreme
+    [description] => Hello from modal
+    [is_live] => 
+)
+
+[10-Sep-2025 09:02:59 UTC] Array
+(
+    [title] => Modal Test
+    [date] => 2025-09-10
+    [priority] => extreme
+    [description] => Hello from Modal
+    [is_live] => 
+)
+
+[10-Sep-2025 09:12:17 UTC] Array
+(
+    [title] => Modal Test
+    [date] => 2025-09-10
+    [priority] => moderate
+    [description] => Hello from modal
+    [is_live] => 
+)
+
+[10-Sep-2025 09:13:47 UTC] Array
+(
+    [title] => Modal Test
+    [date] => 2025-09-10
+    [priority] => moderate
+    [description] => Hello from Modal
+    [is_live] => 
+)
+

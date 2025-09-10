@@ -13,3 +13,7 @@
     width: 42px;
     height: 41px;
 }
+
+.add_task_button {
+    height: 40px !important;
+}

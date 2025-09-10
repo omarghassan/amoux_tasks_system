@@ -1,0 +1,97 @@
+/* ========== Modal Body Content ========== */
+.modal-content {
+    font-family: "Montserrat", sans-serif;
+}
+
+.modal-body {
+    background-color: #f9f9f9 !important;
+    width: 920px;
+    height: 710px;
+    align-self: center;
+    padding: 48px 62px !important;
+    border-radius: 5px;
+}
+
+.modal_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.modal_title {
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 0;
+}
+
+.modal_title.simple-line::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 62%;
+    height: 3px;
+    background-color: #F24E1E;
+    border-radius: 2px;
+}
+
+.back_btn {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.modal_content {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border: 1px solid #c1c2c7;
+    border-radius: 3px;
+    padding: 16px;
+}
+
+.form_group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-input {
+    border: 1px solid #a1a3ab;
+    border-radius: 6px;
+}
+
+.priority_options {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+
+.priority_group {
+    padding: 0;
+}
+
+.description_input {
+    height: 205px;
+}
+
+.description_input::placeholder {
+    padding-left: 16px;
+    padding-top: 10px;
+}
+
+.add_task_btn {
+    width: 90px;
+    height: 34px;
+    color: #ffffff;
+    background-color: #f24e1e;
+    border: #f24e1e;
+    border-radius: 6px;
+    margin-left: 20px;
+    margin-bottom: 0;
+}

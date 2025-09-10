@@ -3,6 +3,7 @@
 require_once('session_check.php');
 require_once('navbar.php');
 require_once('sidebar.php');
+require_once('modal.php')
 ?>
 
 <!DOCTYPE html>
@@ -23,11 +24,12 @@ require_once('sidebar.php');
 
         <div class="welcome_container">
             <h3 class="welcome_text">
-                Welcome back, <?php echo htmlspecialchars(getFirstName($current_user['name'])); ?> 
+                Welcome back, <?php echo htmlspecialchars(getFirstName($current_user['name'])); ?>
                 <img class="handwave_img" src="./assets/images/handwave.png" alt="handwave image">
             </h3>
 
-            <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#addTaskModal">Add task</button>
+            <button type="button" class="btn btn-outline-danger add_task_button" data-bs-toggle="modal"
+                data-bs-target="#addTaskModal">Add Task</button>
         </div>
 
         <!-- Hidden data for JavaScript access -->
