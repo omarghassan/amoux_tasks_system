@@ -1,3 +1,33 @@
+:root {
+
+    /* ========== Page Layout Colors ========== */
+    --container-title-light: #ff6767;
+    --container-title: #f24e1e;
+
+    /* ========== Tasks Status Colors ========== */
+    --task-completed: #05a301;
+    --task-in-progress: #0225ff;
+    --task-not-started: #f21e1e;
+
+    /* ========== Tasks Status Colors ========== */
+    --task-extreme: #f21e1e;
+    --task-moderate: #42ade2;
+    --task-low: #05a301;
+
+    /* ========== Secondary Colors ========== */
+    --color-secondary: #A1A3AB;
+    --color-secondary-light: #c0c3ca;
+
+    /* ========== Menu Status Colors ========== */
+    --menu-completed: var(--task-completed);
+    --menu-in-progress: #eba352;
+    --menu-not-started: #b3261e;
+
+    /* ========== Edit Button Colors ========== */
+    --edit-button-color: #6c757d;
+    --edit-button-hover: #495057;
+}
+
 .main_content {
     margin-left: 406px;
     width: 960px;
@@ -16,4 +46,500 @@
 
 .add_task_button {
     height: 40px !important;
+}
+
+/* ========== Tasks Container ========== */
+.tasks_container {
+    border: 1px solid var(--color-secondary-light);
+    /* border-radius: 8px; */
+    display: flex;
+    gap: 30px;
+    padding: 42px 50px;
+    margin: 20px 0;
+}
+
+/* ========== To-Do Tasks Section ========== */
+.to_do_tasks {
+    flex: 1;
+}
+
+.to_do_tasks_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.to_do_title_container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.task_icon, .task_status_image {
+    width: 21px;
+    height: 24px;
+}
+
+.to_do_title {
+    color: var(--container-title-light);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.add_task_btn_small {
+    color: #a1a3ab !important;
+    font-size: 12px;
+    font-weight: 400;
+    border: none;
+}
+
+.add_icon {
+    color: #f24e1e;
+}
+
+/* ========== Task Details Container ========== */
+.task_details_container {
+    border: 1px solid #A1A3AB;
+    border-radius: 14px;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+}
+
+.task_details_container:last-child {
+    margin-bottom: 0;
+}
+
+.task_details_header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.task_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.task_description {
+    color: #747474;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+.task_info {
+    display: flex;
+    justify-content: space-between;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.task_info p {
+    margin: 0;
+}
+
+.task_date {
+    color: var(--color-secondary);
+}
+
+.tasks_status_container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ========== Completed Tasks Section ========== */
+.completed_tasks {
+    flex: 1;
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.07);
+}
+
+.completed_tasks_header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.completed_title_container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.completed_title {
+    color: var(--container-title);
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+/* ========== Completed Task Items ========== */
+.completed_task_item {
+    border: 1px solid var(--color-secondary);
+    border-radius: 14px;
+    padding: 15px;
+    margin: 15px;
+}
+
+/* .completed_task_item:hover {
+    background-color: #e9ecef;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+
+.completed_task_item:last-child {
+    margin-bottom: 0;
+}
+
+.completed_task_content {
+    margin: 0;
+}
+
+.completed_task_title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    color: #212529;
+    margin-bottom: 8px;
+    /* text-decoration: line-through; */
+    opacity: 0.8;
+}
+
+.completed_task_description {
+    color: #6c757d;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: justify;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.completed_task_date {
+    color: #28a745;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* ========== Loading and Empty States ========== */
+.loading-state {
+    text-align: center;
+    opacity: 0.7;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #f8f9fa;
+    border-style: dashed !important;
+    opacity: 0.7;
+}
+
+.error-state {
+    text-align: center;
+    padding: 30px 15px;
+    background-color: #fff5f5;
+    border-color: #f56565 !important;
+}
+
+.error-state .task_title,
+.error-state .completed_task_title {
+    color: #f56565;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+    .tasks_container {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .main_content {
+        margin-left: 0;
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+
+/* ========== Task Status Widget ========== */
+.task-status-widget {
+    background: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+}
+
+.widget-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.widget-icon {
+    width: 20px;
+    height: 20px;
+    fill: var(--color-secondary);
+}
+
+.widget-title {
+    font-size: 16px;
+    font-weight: 600;
+    color: #374151;
+    margin: 0;
+}
+
+.status-circles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.status-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+}
+
+.circle-container {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 12px;
+}
+
+.circle-bg {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #e5e7eb;
+}
+
+.circle-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: conic-gradient(
+        var(--progress-color) 0deg,
+        var(--progress-color) var(--progress-deg),
+        transparent var(--progress-deg),
+        transparent 360deg
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle-progress::before {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background: white;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.percentage {
+    position: relative;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 16px;
+    color: #374151;
+}
+
+.status-label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #374151;
+}
+
+.status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+}
+
+.completed .circle-progress {
+    --progress-color: var(--task-completed);
+}
+
+.completed .status-dot {
+    background: var(--task-completed);
+}
+
+.in-progress .circle-progress {
+    --progress-color: var(--task-in-progress);
+}
+
+.in-progress .status-dot {
+    background: var(--task-in-progress);
+}
+
+.not-started .circle-progress {
+    --progress-color: var(--task-not-started);
+}
+
+.not-started .status-dot {
+    background: var(--task-not-started);
+}
+
+/* ========== Task Status Dropdown Styling ========== */
+
+.dropdown_header {
+    text-align: center !important;
+}
+
+/* Hide the default Bootstrap dropdown caret */
+.status-dropdown-toggle::after {
+    display: none !important;
+}
+
+/* Style the dropdown button as a small icon button */
+.status-dropdown-toggle {
+    background: none !important;
+    border: none !important;
+    padding: 2px 4px !important;
+    font-size: 14px !important;
+    color: #666 !important;
+    box-shadow: none !important;
+    line-height: 1;
+    width: auto;
+    height: auto;
+    min-height: unset;
+    border-radius: 4px !important;
+    transition: all 0.2s ease;
+    margin-left: 6px;
+}
+
+.status-dropdown-toggle:hover {
+    background-color: #f0f0f0 !important;
+    color: #333 !important;
+}
+
+.status-dropdown-toggle:focus,
+.status-dropdown-toggle:active {
+    box-shadow: none !important;
+    background-color: #e9ecef !important;
+    border: none !important;
+}
+
+/* Position the dropdown menu */
+.status-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Custom dropdown menu styling */
+.status-dropdown-menu {
+    min-width: 120px !important;
+    padding: 8px 0 !important;
+    border: 1px solid #e0e0e0 !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+    background: white;
+    z-index: 1000;
+    margin-top: 4px !important;
+}
+
+/* Style dropdown items */
+.status-dropdown-item {
+    padding: 8px 16px !important;
+    font-size: 12px !important;
+    font-weight: 500 !important;
+    border: none !important;
+    background: none !important;
+    width: 100% !important;
+    text-align: left !important;
+    cursor: pointer !important;
+    transition: background-color 0.2s ease;
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.status-dropdown-item:hover {
+    background-color: #f5f5f5 !important;
+}
+
+.status-dropdown-item:active,
+.status-dropdown-item:focus {
+    background-color: #e9ecef !important;
+    box-shadow: none !important;
+}
+
+/* Edit task button styling */
+.edit-task-item {
+    color: var(--edit-button-color) !important;
+    border-bottom: 1px solid #eee !important;
+    margin-bottom: 4px !important;
+    padding-bottom: 12px !important;
+}
+
+.edit-task-item:hover {
+    color: var(--edit-button-hover) !important;
+    background-color: #f8f9fa !important;
+}
+
+.edit-task-item i {
+    font-size: 14px !important;
+    width: 16px !important;
+    height: 16px !important;
+}
+
+/* Task info section updates - make status section flex */
+.task_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.task_status {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* Loading state for status updates */
+.status-updating {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.status-updating::after {
+    content: " (updating...)";
+    font-size: 8px;
+    color: #666;
+}
+
+.menu_status_not_started {
+    color: var(--task-not-started) !important;
+}
+
+.menu_status_in_progress {
+    color: var(--menu-in-progress) !important;
+}
+
+.menu_status_completed {
+    color: var(--menu-completed) !important;
 }

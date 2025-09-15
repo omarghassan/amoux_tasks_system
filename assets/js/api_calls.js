@@ -161,8 +161,15 @@ const apis = {
     add_task: {
         url: `${base_url}add_task.php`,
         method: "POST"
+    },
+    edit_task: {
+        url: `${base_url}edit_task.php`,
+        method: "POST"
+    },
+    update_task_status: {
+        url: `${base_url}update_task_status.php`,
+        method: "POST"
     }
-
 };
 
 

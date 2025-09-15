@@ -1,4 +1,11 @@
 <?php
+
+// Start session at the very beginning of config.php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start();
+}
+
+
 ini_set("log_errors",1);
 ini_set("error_log","errors_log.txt");
 

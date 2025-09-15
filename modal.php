@@ -13,12 +13,15 @@
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="modal_header">
-                        <p class="modal_title simple-line">Add Task</p>
+                        <p class="modal_title simple-line" id="modalTitle">Add Task</p>
                         <a class="back_btn" href="./dashboard.php">Go Back</a>
                     </div>
 
                     <div class="modal_content">
                         <form id="addTaskForm">
+                            <!-- Hidden field to store task ID for edit mode -->
+                            <input type="hidden" id="taskId" name="task_id" value="">
+                            
                             <div class="form_group">
                                 <label for="title" class="form-label">Title</label>
                                 <input type="text" id="title" name="title" class="form-input" required>
@@ -59,14 +62,14 @@
                     </div>
 
                     <div class="modal_footer">
-                        <button type="submit" form="addTaskForm" class="add_task_btn">Done</button>
+                        <button type="submit" form="addTaskForm" class="add_task_btn" id="submitBtn">Done</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <script type="module" src="./assets/js/add_task_modal.js"></script>
+    <script type="module" src="./assets/js/task_modal.js"></script>
 </body>
 
 </html>

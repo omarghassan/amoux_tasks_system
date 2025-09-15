@@ -1,4 +1,7 @@
 <?php
+// Start session at the very beginning
+session_start();
+
 require_once('config.php');
 
 // Validate request method
@@ -11,7 +14,8 @@ $required_fields = ['title', 'date', 'priority', 'description'];
 $input_data = validate_request_body('POST', $required_fields);
 
 // Extract data
-$user_id = $_SESSION['id'] ?? null;
+// Fix: Use the correct session variable name
+$user_id = $_SESSION['user_id'] ?? null; // Changed from 'id' to 'user_id'
 $title = trim($input_data['title']);
 $date = $input_data['date'];
 $priority = $input_data['priority'];
@@ -19,6 +23,8 @@ $description = trim($input_data['description']);
 
 // Validate user is logged in
 if (!$user_id) {
+    // Enhanced debugging
+    error_log("Session data: " . print_r($_SESSION, true));
     print_response(false, "User not authenticated.");
 }
 

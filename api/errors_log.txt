@@ -899,3 +899,278 @@ Stack trace:
     [is_live] => 
 )
 
+[10-Sep-2025 09:22:20 UTC] Array
+(
+    [title] => Modal Test
+    [date] => 2025-09-10
+    [priority] => extreme
+    [description] => Hello from modal
+    [is_live] => 
+)
+
+[10-Sep-2025 09:37:41 UTC] Array
+(
+    [title] => Modal Test 2
+    [date] => 2025-09-10
+    [priority] => moderate
+    [description] => HEEEEEEEEEEEEEEEEEEEEEEEEEEEEELLO
+    [is_live] => 
+)
+
+[10-Sep-2025 10:04:02 UTC] Array
+(
+    [title] => test
+    [date] => 2025-09-10
+    [priority] => extreme
+    [description] => hfhg
+    [is_live] => 
+)
+
+[11-Sep-2025 12:32:19 UTC] Array
+(
+    [title] => New Task
+    [date] => 2025-09-11
+    [priority] => extreme
+    [description] => This is a new task
+    [is_live] => 
+)
+
+[14-Sep-2025 06:09:24 UTC] Array
+(
+    [email] => faisal@email.com
+    [password] => Faisal@qwerty123456
+    [is_live] => 
+)
+
+[14-Sep-2025 06:09:24 UTC] Array
+(
+    [user_id] => 5
+    [is_live] => 
+)
+
+[14-Sep-2025 06:25:53 UTC] Array
+(
+    [title] => لماذا نحن هنا
+    [date] => 2025-09-14
+    [priority] => extreme
+    [description] => لماذا نحن هنا سؤالٌ صعبٌ سؤالٌ صعبٌ يروادني
+    [is_live] => 
+)
+
+[14-Sep-2025 06:48:24 UTC] Array
+(
+    [title] => Another Task
+    [date] => 2025-09-14
+    [priority] => low
+    [description] => Tasks
+    [is_live] => 
+)
+
+[14-Sep-2025 09:19:56 UTC] Array
+(
+    [task_id] => 7
+    [status] => completed
+)
+
+[14-Sep-2025 10:55:28 UTC] Array
+(
+    [title] => Qwerty
+    [date] => 2025-09-14
+    [priority] => moderate
+    [description] => QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY QWERTY 
+    [is_live] => 
+)
+
+[14-Sep-2025 11:26:01 UTC] Array
+(
+    [task_id] => 8
+    [status] => in_progress
+)
+
+[14-Sep-2025 11:26:10 UTC] Array
+(
+    [task_id] => 8
+    [status] => not_started
+)
+
+[14-Sep-2025 12:01:12 UTC] Array
+(
+    [task_id] => 8
+    [status] => in_progress
+)
+
+[14-Sep-2025 12:01:27 UTC] Array
+(
+    [task_id] => 8
+    [status] => not_started
+)
+
+[14-Sep-2025 12:22:54 UTC] Array
+(
+    [task_id] => 8
+    [status] => completed
+)
+
+[14-Sep-2025 12:23:10 UTC] Array
+(
+    [task_id] => 8
+    [status] => not_started
+)
+
+[14-Sep-2025 12:23:25 UTC] Array
+(
+    [task_id] => 8
+    [status] => completed
+)
+
+[14-Sep-2025 12:23:39 UTC] Array
+(
+    [task_id] => 8
+    [status] => not_started
+)
+
+[14-Sep-2025 12:23:52 UTC] Array
+(
+    [task_id] => 7
+    [status] => completed
+)
+
+[14-Sep-2025 12:24:05 UTC] Array
+(
+    [task_id] => 7
+    [status] => not_started
+)
+
+[14-Sep-2025 12:24:37 UTC] Array
+(
+    [task_id] => 8
+    [status] => completed
+)
+
+[14-Sep-2025 12:37:09 UTC] Array
+(
+    [task_id] => 8
+    [status] => completed
+)
+
+[14-Sep-2025 12:39:20 UTC] Array
+(
+    [task_id] => 7
+    [status] => completed
+)
+
+[14-Sep-2025 12:53:43 UTC] Array
+(
+    [task_id] => 2
+    [status] => in_progress
+)
+
+[14-Sep-2025 13:28:35 UTC] Array
+(
+    [task_id] => 5
+    [status] => completed
+)
+
+[14-Sep-2025 13:30:48 UTC] Array
+(
+    [task_id] => 8
+    [status] => completed
+)
+
+[14-Sep-2025 13:34:16 UTC] Array
+(
+    [task_id] => 7
+    [status] => completed
+)
+
+[14-Sep-2025 13:34:21 UTC] Array
+(
+    [task_id] => 4
+    [status] => completed
+)
+
+[14-Sep-2025 13:34:23 UTC] Array
+(
+    [task_id] => 2
+    [status] => completed
+)
+
+[14-Sep-2025 13:34:31 UTC] Array
+(
+    [task_id] => 2
+    [status] => not_started
+)
+
+[14-Sep-2025 13:34:36 UTC] Array
+(
+    [task_id] => 2
+    [status] => in_progress
+)
+
+[14-Sep-2025 13:43:03 UTC] Array
+(
+    [task_id] => 8
+    [status] => completed
+)
+
+[14-Sep-2025 13:43:28 UTC] Array
+(
+    [task_id] => 3
+    [status] => completed
+)
+
+[14-Sep-2025 13:43:40 UTC] Array
+(
+    [task_id] => 6
+    [status] => in_progress
+)
+
+[15-Sep-2025 08:32:15 UTC] Array
+(
+    [task_id] => 2
+    [status] => completed
+)
+
+[15-Sep-2025 08:41:03 UTC] Array
+(
+    [email] => faisal@email.com
+    [password] => Faisal@qwerty123456
+    [is_live] => 
+)
+
+[15-Sep-2025 08:41:04 UTC] Array
+(
+    [user_id] => 5
+    [is_live] => 
+)
+
+[15-Sep-2025 09:11:03 UTC] Array
+(
+    [title] => Another Task EDITED
+    [date] => 2025-09-15
+    [priority] => moderate
+    [description] => Tasks EDITED
+    [task_id] => 7
+    [is_live] => 
+)
+
+[15-Sep-2025 09:11:45 UTC] Array
+(
+    [title] => Another Task EDITED
+    [date] => 2025-09-14
+    [priority] => low
+    [description] => Tasks
+    [task_id] => 7
+    [is_live] => 
+)
+
+[15-Sep-2025 09:12:37 UTC] Array
+(
+    [title] => Another Task EDITED
+    [date] => 2025-09-14
+    [priority] => moderate
+    [description] => Tasks
+    [task_id] => 7
+    [is_live] => 
+)
+
