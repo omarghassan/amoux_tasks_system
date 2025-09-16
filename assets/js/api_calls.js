@@ -169,6 +169,10 @@ const apis = {
     update_task_status: {
         url: `${base_url}update_task_status.php`,
         method: "POST"
+    },
+    delete_task: {
+        url: `${base_url}delete_task.php`,
+        method: "POST"
     }
 };
 

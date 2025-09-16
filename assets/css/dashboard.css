@@ -26,10 +26,21 @@
     /* ========== Edit Button Colors ========== */
     --edit-button-color: #6c757d;
     --edit-button-hover: #495057;
+    
+    /* ========== Delete Button Colors ========== */
+    --delete-button-color: #dc3545;
+    --delete-button-hover: #c82333;
+}
+
+/* ========== Page Layout ========== */
+
+.page_content {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .main_content {
-    margin-left: 406px;
+    margin-left: 150px;
     width: 960px;
 }
 
@@ -105,6 +116,7 @@
     padding: 15px;
     margin-bottom: 15px;
     background-color: #ffffff;
+    transition: all 0.3s ease;
 }
 
 .task_details_container:last-child {
@@ -253,6 +265,28 @@
 .error-state .task_title,
 .error-state .completed_task_title {
     color: #f56565;
+}
+
+/* ========== Task State Animations ========== */
+.task-deleting {
+    opacity: 0.6 !important;
+    pointer-events: none !important;
+    position: relative;
+}
+
+.task-deleting::after {
+    content: "Deleting...";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(220, 53, 69, 0.9);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+    z-index: 10;
 }
 
 /* ========== Responsive Design ========== */
@@ -405,6 +439,18 @@
 
 .dropdown_header {
     text-align: center !important;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.task_editing_options {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.task_editing_options > button {
+    padding: 0 !important;
 }
 
 /* Hide the default Bootstrap dropdown caret */
@@ -488,8 +534,8 @@
 /* Edit task button styling */
 .edit-task-item {
     color: var(--edit-button-color) !important;
-    border-bottom: 1px solid #eee !important;
-    margin-bottom: 4px !important;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 4px;
     padding-bottom: 12px !important;
 }
 
@@ -502,6 +548,30 @@
     font-size: 14px !important;
     width: 16px !important;
     height: 16px !important;
+}
+
+/* Delete task button styling */
+.delete-task-item {
+    color: var(--delete-button-color) !important;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 4px;
+    padding-bottom: 12px !important;
+}
+
+.delete-task-item:hover {
+    color: var(--delete-button-hover) !important;
+    background-color: #fff5f5 !important;
+}
+
+.delete-task-item i {
+    font-size: 14px !important;
+    width: 16px !important;
+    height: 16px !important;
+}
+
+/* Dropdown divider styling */
+.dropdown-divider {
+    margin: 0 !important;
 }
 
 /* Task info section updates - make status section flex */

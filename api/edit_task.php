@@ -11,7 +11,7 @@ $required_fields = ['task_id', 'title', 'date', 'priority', 'description'];
 $input_data = validate_request_body('POST', $required_fields);
 
 // Extract data
-$user_id = $_SESSION['id'] ?? null;
+$user_id = $_SESSION['user_id'] ?? null;
 $task_id = (int)$input_data['task_id'];
 $title = trim($input_data['title']);
 $date = $input_data['date'];

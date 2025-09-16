@@ -1174,3 +1174,36 @@ Stack trace:
     [is_live] => 
 )
 
+[15-Sep-2025 09:54:15 UTC] Array
+(
+    [title] => Another Task EDITED
+    [date] => 2025-09-15
+    [priority] => moderate
+    [description] => Tasks
+    [task_id] => 7
+    [is_live] => 
+)
+
+[15-Sep-2025 13:21:41 UTC] Array
+(
+    [title] => Task #123
+    [date] => 2025-09-16
+    [priority] => moderate
+    [description] => This is the task description
+    [is_live] => 
+)
+
+[15-Sep-2025 13:22:10 UTC] Array
+(
+    [title] => new task
+    [date] => 2025-09-20
+    [priority] => low
+    [description] => rwgds
+    [is_live] => 
+)
+
+[16-Sep-2025 07:30:45 UTC] Array
+(
+    [task_id] => 10
+)
+

@@ -20,7 +20,7 @@
     </div>
 
     <!-- Desktop Sidebar -->
-    <div class="d-none d-md-block position-fixed sidebar">
+    <div class="d-none d-md-block sidebar">
         <!-- User Profile Section -->
         <div class="user-profile-section">
             <img src="<?php echo htmlspecialchars(getProfilePicture($current_user['profile_picture'] ?? null)); ?>"
